@@ -4,5 +4,7 @@ import vue from '@vitejs/plugin-vue'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/test-gh-page'
+  base: '/test-gh-page', build: {
+    outDir: 'docs'
+  }
 })
